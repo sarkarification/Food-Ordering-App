@@ -1,0 +1,30 @@
+.appContainer{
+    background-color: #121212;
+    box-sizing: border-box;
+    /* border: 2px solid white; */
+}
+
+.app{
+    background-color: transparent;
+    width: 70%;
+    margin: auto;
+    /* border: 2px solid white; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content : center;
+    align-items : center; */
+}
+@media (max-width: 40rem) {
+    .app{
+        background-color: transparent;
+        width: 100%;
+        margin: auto;
+        /* border: 2px solid white; */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content : center;
+        align-items : center; */
+    }
+}
