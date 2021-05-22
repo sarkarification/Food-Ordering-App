@@ -83,7 +83,7 @@
     margin: 0; 
 }
 
-@media (max-width: 40rem)
+@media (max-width: 48rem)
 {
     .services{
         width: 100%;

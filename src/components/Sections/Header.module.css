@@ -63,7 +63,7 @@
     margin: 0.29rem auto;
   }
 
-  @media (max-width: 40rem) {
+  @media (max-width: 48rem) {
     .headerDiv{
         flex-direction : row-reverse;
         flex-wrap : nowrap;

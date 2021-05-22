@@ -28,7 +28,7 @@
     margin: 0
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 48rem) {
 
   .sliderDiv h1{
       font-weight: 700;

@@ -15,10 +15,10 @@
     /* justify-content : center;
     align-items : center; */
 }
-@media (max-width: 40rem) {
+@media (max-width: 48rem) {
     .app{
         background-color: transparent;
-        width: 100%;
+        width: 100vw;
         margin: auto;
         /* border: 2px solid white; */
         height: 100%;

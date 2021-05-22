@@ -97,7 +97,7 @@
     letter-spacing: 1.5px;
 }
 
-@media (max-width: 40rem)
+@media (max-width: 48rem)
 {
     .WorkExp{
         height: 85rem;

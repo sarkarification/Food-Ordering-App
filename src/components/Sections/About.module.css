@@ -149,7 +149,7 @@
 
 
 
-@media (max-width: 40rem){
+@media (max-width: 48rem){
     .about h1{
         position: absolute;
         /* transform: rotateX(90deg); */
