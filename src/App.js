@@ -1,39 +1,31 @@
-import React,{useState} from 'react' 
-import classes from './App.module.css';
-import Header from './components/Sections/Header';
-import NameSlider from './components/Sections/NameSlider';
-import About from './components/Sections/About';
-import Services from './components/Sections/Services';
-import WorkExp from './components/Sections/WorkExp';
-import Footer from './components/Sections/Footer';
-import NavBar from './components/Sections/NavBar';
-// import Education from './components/Sections/Education';
+import React, { useState } from 'react' 
+import Cart from './components/Cart/Cart';
+import Header from "./components/Layout/Header";
+import Meals from './components/Meals/Meals';
+import CartProvider from './store/CartProvider';
 
 const App =() => {
+  const [showCart, setshowCart]= useState(false);
 
-  const [showNav, setShowNav]= useState(false);
-
-  const showNavHandler = () => {
-    setShowNav(true)
+  const showCartHandler = () => {
+    setshowCart(true)
   }
 
-  const hideNavHandler = () => {
-    setShowNav(false)
+  const hideCartHandler = () => {
+    setshowCart(false)
   }
 
   return (
-    <div className={classes.appContainer}>
-      {showNav && <NavBar onClose={hideNavHandler} />}
-      <div className={classes.app}>
-        <Header onShow={showNavHandler}/>
-        <NameSlider />
-        <About id="About"/>
-        <Services />
-        <WorkExp />
-        {/* <Education /> */}
-        <Footer />
-      </div>
-    </div>
+    <CartProvider>
+      {showCart && <Cart onClose={hideCartHandler}/>}
+      <Header 
+        onShowCart={showCartHandler}
+        />
+      <main>
+        <Meals />
+        
+      </main>
+    </CartProvider>
   );
 }
 
